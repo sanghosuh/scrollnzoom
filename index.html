@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>ScrollNZoom</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="css/theme/lens_nmf.css">
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+
+<!-- 				<section>
+					<p style="font-size:1.3em"> <strong>ScrollNZoom</strong><br>Interactive, Dynamic Exploration <br>of Representation Space</p><br>
+
+
+					<p style="font-size:1.1em"> 
+						
+						Sangho Suh<sup>1</sup>, Edith Law<sup>1</sup>, Pierre-Yves Oudeyer<sup>2</sup>
+						
+					<br><br>
+					</p>
+					<p style="font-size:0.9em">
+						<sup>1</sup>University of Waterloo <sup>2</sup>Inria Research
+					</p>	
+				</section>
+ -->
+				
+				<section data-transition="zoom">
+					<!--Irrelevant-->
+	 				<section data-transition="zoom" data-transition-speed="fast">
+						<!-- <span style="font-size:1.3em"><strong style="color:black">What caused the landslide?</strong></span><br>  -->
+						<span style="font-size:0.7em; text-align: right">
+						The Beagle is a breed of small hound, similar in appearance to the much larger foxhound. The beagle is a scent hound, developed primarily for hunting hare. With a great sense of smell and superior tracking instinct, the beagle is employed as detection dog for prohibited agricultural imports and foodstuffs in quarantine around the world. The beagle is intelligent but single-minded. It is a popular pet due to its size, good temper, and lack of inherited health problems.
+						Although beagle-type dogs have existed for 2,500 years, the modern breed was developed in Great Britain around the 1830s from several breeds, including the Talbot Hound, the North Country Beagle, the Southern Hound, and possibly the Harrier.
+						Beagles have been depicted in popular culture since Elizabethan times in literature and paintings, and more recently in film, television, and comic books. Snoopy of the comic strip Peanuts has been called "the world's most famous beagle".
+						</span>
+					</section>
+
+					<!--Concrete-->					
+	 				<section data-transition="zoom" data-transition-speed="fast">
+		 				<span style="font-size:0.7em; text-align: right">
+						The Beagle is a breed of small hound, similar in appearance to the much larger foxhound. The beagle is a scent hound. With a great sense of smell and superior tracking instinct, the beagle is employed as detection dog. The beagle is intelligent but single-minded. It is a popular pet.
+						Although beagle-type dogs have existed for a long time, the modern breed was developed in Great Britain around the 1830s from several breeds.
+						Beagles have been depicted in popular culture since Elizabethan times. Snoopy of the comic strip Peanuts has been called "the world's most famous beagle".
+						</span>
+					</section>
+
+					<!--Abstract-->
+					<section data-transition="zoom" data-transition-speed="fast">
+						The Beagle is a breed of small hound, similar in appearance to the much larger foxhound.
+					</section>		
+
+					<!--More Abstract-->
+					<section data-transition="zoom" data-transition-speed="fast">
+						
+						<p style="text-align:left; font-size:1.1em">
+							The Beagle is a breed of small hound.
+						</p>
+					</section>	
+
+					<!--Even More Abstract-->
+					<section data-transition="zoom" data-transition-speed="fast">
+						<img src="img/hierarchy.png" alt="">
+					</section>	
+
+					<section data-transition="zoom">
+						<img src="img/classification.png" style="width:80%" alt="">
+					</section>	
+
+				</section>
+
+
+				<section>
+					
+				</section>
+
+				<!--Concrete-->
+				<section data-transition="zoom">
+					
+				</section>
+
+				<!--Abstract-->
+				<section data-transition="zoom">
+					
+				</section>		
+
+				<!--More Abstract-->
+				<section data-transition="zoom">
+				<p style="text-align:left; font-size:1.1em">
+								
+				</p>
+				</section>	
+
+				<!--Even More Abstract-->
+		<!-- 		<section data-transition="zoom">
+					<img src="img/hierarchy.png" alt="">
+				</section>		 -->		
+
+				
+
+			</div>
+			
+
+
+
+			<div class="footer">
+
+				<div style="text-align:left; float:left; width:20%; margin-left:0.5%; margin-top:0.5%">
+					<img src="./img/beagle.jpg">
+					<!-- <strong style="color:blue">Beagle</strong> -->
+				</div>
+
+			</div>
+
+
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Reveal.configure({
+			// 	backgroundTransition: 'zoom'
+			// })
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				// Display controls in the bottom right corner
+				controls: true,
+
+				// Display a presentation progress bar
+				progress: true,
+
+				// Display the page number of the current slide
+				slideNumber: false,
+
+				// Push each slide change to the browser history
+				history: true,
+				
+				// Enable the slide navigation via mouse wheel
+				mouseWheel: true,
+				
+				// Transition style
+				transition: 'zoom',
+				
+				// Transition speed
+				transitionSpeed: 'slow',
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
